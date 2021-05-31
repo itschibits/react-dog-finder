@@ -8,13 +8,22 @@ import perry from "./dog-pics/perry.jpg";
 import tubby from "./dog-pics/tubby.jpg";
 import whiskey from "./dog-pics/whiskey.jpg";
 
-/** Render the App w/ nav bar and routes to dog app. */
+/** App 
+ * Render the App w/ nav bar and routes to dog app.
+ * 
+ * Props:
+ * - dogs [{dog},{dog},...]
+ * 
+ * 
+ * App -> { Nav, Routes }
+ * 
+ * */
 function App({ dogs }) {
   return (
     <div>
       <BrowserRouter>
-        <Nav dogs={dogs}/>
-        <Routes dogs={dogs}/>
+        <Nav dogs={dogs} />
+        <Routes dogs={dogs} />
       </BrowserRouter>
     </div>
   );

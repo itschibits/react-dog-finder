@@ -5,6 +5,8 @@ import "./Nav.css";
 /** Renders Nav bar with links to all dogs
  * 
  * props: { dogs }
+ * 
+ * App -> Nav
  */
 function Nav({ dogs }) {
 
@@ -16,6 +18,7 @@ function Nav({ dogs }) {
   return (
     <nav className="Nav">
       <ul>
+      <NavLink to="/dogs">Home</NavLink>
       { allDogs }
       </ul>
     </nav>
